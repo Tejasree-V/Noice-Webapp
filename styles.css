@@ -16,19 +16,19 @@ nav{
 }
 
 nav ul {
-    display:flex;
+    display: flex;
     align-items: center;
-    list-style-type:none;
+    list-style-type: none;
     height: 65px;
     background-color: #b88e75;
-    color:#390000;
+    color: #390000;
 }
 nav ul li{
-    padding:0 12px;
+    padding: 0 12px;
 }
 
 nav ul a{
-    color:#390000;
+    color: #390000;
     text-decoration: none;
 }
 
@@ -38,7 +38,7 @@ nav ul a{
 }
 
 .brand{
-    display:flex;
+    display: flex;
     align-items: center;
     font-weight: bolder;
     font-size: 1.3rem;
@@ -46,42 +46,44 @@ nav ul a{
 
 .container{
     min-height: 72vh;
-    background-color:black;
-    color:white;
-    font-family:'Varela Round', sans-serif;
-    display:flex;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
     margin: 23px auto;
-    width:70%;
+    width: 70%;
     padding: 34px;
     background-image: url(bg.jpg);
     background-size: cover; 
     background-position: center;
 }
+
 .bottom{
-    position:sticky;
+    position: sticky;
     height: 100px;
-    background-color:#390000;
-    color:white;
-    bottom:0;
-    display:flex;
+    background-color: #390000;
+    color: white;
+    bottom: 0;
+    display: flex;
     justify-content: center;
-    align-items:center;
-    flex-direction:column;
+    align-items: center;
+    flex-direction: column;
 }
 
 .icons{
-    margin-top:12px;
-    display:flex;
-    gap:20px;
+    margin-top: 12px;
+    display: flex;
+    gap: 20px;
 }
 
 .icons i{
     cursor: pointer;
 }
+
 #myProgressBar{
     width: 80vw;
-    text-align:center;
-    cursor:pointer;
+    text-align: center;
+    cursor: pointer;
 }
 
 .songItemContainer{
@@ -89,9 +91,9 @@ nav ul a{
 }
 
 .songItem{
-    height:50px;
-    display:flex;
-    background-color:white;
+    height: 50px;
+    display: flex;
+    background-color: white;
     color: black;
     margin: 12px 0;
     justify-content: space-between;
@@ -101,9 +103,10 @@ nav ul a{
 
 .paragraph{
     max-width: 50%;
-    background-color:antiquewhite;
+    min-width: 500px;
+    background-color: antiquewhite;
     color: black;
-    padding:25px 10px;
+    padding: 25px 10px;
     margin: 50px 0;
     text-align: justify; 
     border-radius: 34px;
@@ -112,9 +115,10 @@ nav ul a{
 .tstamp{
     margin: 0 14px;
 }
+
 .songItem img{
-    width:43px;
-    margin:0 23px;
+    width: 43px;
+    margin: 0 23px;
     border-radius: 34px;
 }
 
@@ -123,16 +127,89 @@ nav ul a{
 }
 
 .timestamp i{
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .songInfo{
-    font-family:'Varela Round', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     position: absolute;
-    left:10vw;
+    left: 10vw;
 }
 
 .songInfo img{
-    opacity:0;
+    opacity: 0;
     transition: opacity 1s ease-in;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        padding: 20px; 
+        margin: 15px auto;
+    }
+
+    .brand img {
+        width: 36px; 
+        padding: 0 6px;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .paragraph {
+        max-width: 90%; 
+        min-width: auto; 
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .songItem {
+        height: auto;
+        padding: 10px;
+    }
+
+    .songItem img {
+        width: 36px; 
+        margin: 0 10px;
+    }
+
+    .timestamp {
+        margin: 10px 0; 
+    }
+
+    #myProgressBar {
+        width: 90vw; 
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .container {
+        width: 95%; 
+        padding: 15px;
+    }
+
+    .brand {
+        font-size: 1.1rem; 
+    }
+
+    nav ul {
+        padding: 5px 0;
+    }
+
+    .paragraph {
+        padding: 15px 5px; 
+    }
+
+    .songItem {
+        margin: 8px 0;
+    }
+
+    .icons {
+        gap: 10px; 
+    }
 }
