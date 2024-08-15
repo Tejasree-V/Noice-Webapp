@@ -152,13 +152,9 @@ nav ul a{
         font-size: 1.1rem; 
     }
 
-    nav ul {
-        padding: 5px 0;
-    }
-
     .paragraph {
         width: 80%;
-        padding: 15px 5px; 
+        padding: 15px 10px; 
     }
 
     .songItem {
@@ -167,11 +163,11 @@ nav ul a{
     }
 
     .songName{
-        width: 100px;
+        width: 60 px;
         overflow: hidden;
     }
     
     .icons {
-        gap: 10px; 
+        gap: 5px; 
     }
 }
