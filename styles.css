@@ -141,51 +141,6 @@ nav ul a{
     transition: opacity 1s ease-in;
 }
 
-/* Media query for tablets and smaller screens */
-@media (max-width: 768px) {
-    .container {
-        width: 90%; 
-        padding: 20px; 
-        margin: 15px auto;
-    }
-
-    .brand img {
-        width: 36px; 
-        padding: 0 6px;
-    }
-
-    nav ul {
-        flex-direction: column; 
-        height: auto;
-        padding: 10px 0;
-    }
-
-    .paragraph {
-        max-width: 90%; 
-        min-width: auto; 
-        margin: 30px auto;
-        padding: 20px;
-    }
-
-    .songItem {
-        height: auto;
-        padding: 10px;
-    }
-
-    .songItem img {
-        width: 36px; 
-        margin: 0 10px;
-    }
-
-    .timestamp {
-        margin: 10px 0; 
-    }
-
-    #myProgressBar {
-        width: 90vw; 
-    }
-}
-
 /* Media query for mobile devices */
 @media (max-width: 480px) {
     .container {
@@ -202,13 +157,20 @@ nav ul a{
     }
 
     .paragraph {
+        width: 80%;
         padding: 15px 5px; 
     }
 
     .songItem {
         margin: 8px 0;
+        overflow:scroll;
     }
 
+    .songName{
+        width: 100px;
+        overflow: hidden;
+    }
+    
     .icons {
         gap: 10px; 
     }
